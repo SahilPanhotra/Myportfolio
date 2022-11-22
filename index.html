@@ -108,7 +108,25 @@
                 </figure>
                 </div>
             </div> 
-            <div class="modal__half modal__contact">Let's have a chat</div>
+            <div class="modal__half modal__contact">
+                <h3 class="modal__title modal__title--contact">Let's Have a Chat</h3>
+                <h3 class="modal__sub-title modal__sub-title--contact">I'm Currently Open to New Opportunities.</h3>
+                <form id="contact__form" >
+                    <div class="form__item">
+                        <label class="form__item--label" >Name</label>
+                        <input class="input" type="text" name="user_name" required></input>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label" >Email</label>
+                        <input class="input" type="email" name="user_email" required></input>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label">Message</label>
+                        <textarea class="input" type="text" name="message" required></textarea>
+                    </div>
+                    <button id="contact__submit" class="form__submit">Send it My Way</button>
+                </form>
+            </div>
         </div>
     </section>
     <section class="projects">
