@@ -6,7 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sahil Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="./index.js"></script>
     <script src="https://kit.fontawesome.com/a9d6f93c97.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+        
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("xrYcv5CqntpwvuqKL");
+   })();
+</script>
+
 </head>
 <body>
     <section id="landing-page">
@@ -111,7 +122,7 @@
             <div class="modal__half modal__contact">
                 <h3 class="modal__title modal__title--contact">Let's Have a Chat</h3>
                 <h3 class="modal__sub-title modal__sub-title--contact">I'm Currently Open to New Opportunities.</h3>
-                <form id="contact__form" >
+                <form id="contact__form" onsubmit="contact(event)" >
                     <div class="form__item">
                         <label class="form__item--label" >Name</label>
                         <input class="input" type="text" name="user_name" required></input>
