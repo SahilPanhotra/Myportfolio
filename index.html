@@ -30,10 +30,10 @@
              <li class="nav__link">
                 <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">About</a>
              </li>
-             <li class="nav__link">
+             <li class="nav__link" >
                 <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">Projects</a>
              </li>
-             <li class="nav__link">
+             <li class="nav__link" onclick="toggleModal()">
                 <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">Contact</a>
              </li>
              <li class="nav__link click ">
@@ -50,7 +50,7 @@
                     I'm Sahil.
                 </h1>
                 <p class="header__para">I'm <b class="orange">Frontend Web Developer </b> with a strong passion for experiences.<br>
-                Here's a bit <b class="orange"> about me.</b></p>
+                Here's a bit <b class="orange click" onclick="toggleModal()"> about me.</b></p>
                 <div class="social__list">
                     <a href="https://linkedin.com/sahil-panhotra" target="_blank" class="social__link click"><i class="fab fa-linkedin-in"></i></a>
                     <a href="https://github.com/sahilpanhotra" target="_blank" class="social__link click"><i class="fab fa-github"></i></a>
@@ -58,13 +58,14 @@
                 </div> 
             </div>
         </header>
-        <button class="mail__btn click"><i class="fas fa-envelope"></i></button>
+        <button class="mail__btn click" onclick="toggleModal()"><i class="fas fa-envelope"></i></button>
         <a href="#projects" class="scroll">
             <div class="scroll__icon click">
                 
             </div>
         </a>
         <div class="modal">
+            
             <div class="modal__half modal__about">
                 <h3 class="modal__title modal__title--about">Here's a bit about me</h3>
                 <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer</h3>
@@ -120,6 +121,7 @@
                 </div>
             </div> 
             <div class="modal__half modal__contact">
+                <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
                 <h3 class="modal__title modal__title--contact">Let's Have a Chat</h3>
                 <h3 class="modal__sub-title modal__sub-title--contact">I'm Currently Open to New Opportunities.</h3>
                 <form id="contact__form" onsubmit="contact(event)" >
@@ -140,7 +142,7 @@
                 <div class="modal__overlay modal__overlay--loading"><i class="fas fa-spinner"></i></div>
                 <div class="modal__overlay modal__overlay--success">Thanks for the Message! Looking Forward to Speaking to You Soon.</div>
             </div>
-            <i class="fas fa-times modal__exit click"></i>
+           
         </div>
     </section>
     <section class="projects">
