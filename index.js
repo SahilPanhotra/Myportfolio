@@ -1,6 +1,15 @@
-//template_lcmqf1s
-//service_bzofxep
-//xrYcv5CqntpwvuqKL
+let isModalOpen=false;
+let contrastToggle=false;
+function toggleContrast() {
+  console.log("work")
+  contrastToggle =!contrastToggle;
+  if (contrastToggle) {
+    document.body.classList += " dark-theme"
+    
+  } else {
+    document.body.classList.remove("dark-theme");
+  }
+}
 
 function contact(event) {
   event.preventDefault();
@@ -25,7 +34,7 @@ function contact(event) {
       );
     });
 }
-let isModalOpen=false;
+
 
 function toggleModal() {
   
@@ -36,3 +45,4 @@ function toggleModal() {
   isModalOpen=true;
   document.body.classList += " modal--open"
 }
+
