@@ -8,7 +8,8 @@
 html {
   scroll-behavior: smooth;
 }
-input,textarea {
+input,
+textarea {
   width: 100%;
   background-color: #242424;
   color: white;
@@ -20,10 +21,12 @@ input,textarea {
   height: 40px;
   transition: all 300ms ease;
 }
-input:hover, textarea:hover {
+input:hover,
+textarea:hover {
   border-color: #dcdfe6;
 }
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   border-color: #53a4fb;
 }
 textarea {
@@ -34,9 +37,7 @@ textarea {
 label {
   font-size: 14px;
   font-weight: bold;
-
 }
-
 
 button {
   cursor: pointer;
@@ -123,23 +124,22 @@ nav,
 .header {
   opacity: 1;
   visibility: visible;
-  transition: all 600ms; 
+  transition: all 600ms;
 }
 .modal--open nav,
 .modal--open .scroll,
 .modal--open .header {
   opacity: 0;
   visibility: hidden;
-  transition: all 400ms; 
+  transition: all 400ms;
 }
 .dark-theme .title,
 .dark-theme .section__title,
 .dark-theme .section__sub-title,
 .dark-theme .nav__link--anchor,
 .dark-theme .fa-adjust,
-.dark-theme .header__para
- {
-color: white;
+.dark-theme .header__para {
+  color: white;
 }
 .dark-theme section {
   background-color: #242424;
@@ -162,8 +162,6 @@ color: white;
   background-color: white;
   color: #242424;
 }
-
-
 
 /* LANDING PAGE */
 #landing-page {
@@ -298,7 +296,7 @@ nav {
   overflow: hidden;
   display: flex;
   z-index: -1;
-  transition: visibility 1s,z-index 1s ,box-shadow 0.5s ease;
+  transition: visibility 1s, z-index 1s, box-shadow 0.5s ease;
 }
 .modal--open .modal {
   z-index: 60;
@@ -314,7 +312,8 @@ nav {
   position: relative;
   transition: all 300ms ease-in;
 }
-.modal--open .modal__about,.modal--open .modal__contact {
+.modal--open .modal__about,
+.modal--open .modal__contact {
   transform: translateX(0%);
 }
 .modal__about {
@@ -326,40 +325,40 @@ nav {
   flex-wrap: wrap;
 }
 .modal__language {
-    width: 25%;
-    padding: 16px;
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    align-items: center;
-    transition: all 300 ease;
+  width: 25%;
+  padding: 16px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  transition: all 300 ease;
 }
-.modal__language:hover .language__name{
-    transform: scale(1);
+.modal__language:hover .language__name {
+  transform: scale(1);
 }
 .modal__language:hover {
-    filter: brightness(80%);
-    transform: scale(0.9);
+  filter: brightness(80%);
+  transform: scale(0.9);
 }
 .language__name {
-    position: absolute;
-    bottom: -10px;
-    transform: scale(0);
-    transition: all 300ms ease;
+  position: absolute;
+  bottom: -10px;
+  transform: scale(0);
+  transition: all 300ms ease;
 }
 .modal__language--img {
-    width: 100%;
+  width: 100%;
 }
 .modal__title {
-    font-size: 26px;
+  font-size: 26px;
 }
 .modal__sub-title {
-    margin:12px 0 24px 0;
-    font-size: 14px;
+  margin: 12px 0 24px 0;
+  font-size: 14px;
 }
 .modal__para {
-    margin-bottom: 12px;
-    line-height: 1.75;
+  margin-bottom: 12px;
+  line-height: 1.75;
 }
 .modal__contact {
   background-color: #242424;
@@ -401,9 +400,8 @@ nav {
 }
 .modal__overlay--loading {
   background-color: #242424;
-  
+
   font-size: 80px;
-  
 }
 
 .modal__overlay--success {
@@ -424,7 +422,7 @@ nav {
   0% {
     transform: rotate(0);
   }
-  100%{
+  100% {
     transform: rotate(360deg);
   }
 }
@@ -460,7 +458,7 @@ nav {
 .project__wrapper {
   position: relative;
   border-radius: 20px;
-  box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.90);
+  box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.9);
   overflow: hidden;
 }
 .project__wrapper:hover .project__description {
@@ -621,8 +619,6 @@ footer {
   left: 80vw;
 }
 
-
-
 /* Small phones, tablets, large smart phones */
 @media (max-width: 768px) {
   .title {
@@ -645,13 +641,28 @@ footer {
   }
 }
 
+@media (max-width: 685px) {
+  .project__description--para {
+    display: none;
+  }
+  .project__description {
+    top: 50%;
+    left: 40px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+  }
+  .project__description--sub-title {
+    margin-bottom: 8px;
+  }
+}
 /* Small phones */
 @media (max-width: 480px) {
   .title {
     font-size: 52px;
   }
   .header__para {
-    font-size: 18px;
+    font-size: 16px;
   }
   .nav__link:first-child {
     display: none;
@@ -664,9 +675,14 @@ footer {
     padding: 0;
     width: 100%;
     text-align: center;
+    
+  }
+  .project__description--title{
+    font-size: 24px;
   }
   .project__description--sub-title {
     margin-bottom: 8px;
+    font-size: 18px;
   }
   .modal__half {
     padding: 40px;
@@ -676,5 +692,3 @@ footer {
     width: 50px;
   }
 }
-
-
