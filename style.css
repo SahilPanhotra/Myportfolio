@@ -24,7 +24,7 @@ input:hover, textarea:hover {
   border-color: #dcdfe6;
 }
 input:focus, textarea:focus {
-  border-color: #f06449;
+  border-color: #53a4fb;
 }
 textarea {
   resize: vertical;
@@ -77,7 +77,7 @@ p {
   line-height: 1;
 }
 .orange {
-  color: #f06449 !important;
+  color: #53a4fb !important;
 }
 
 .header__para {
@@ -183,7 +183,7 @@ color: white;
   display: flex;
 }
 .social__link {
-  background-color: #f06449;
+  background-color: #53a4fb;
   color: white;
   padding: 6px;
   width: 32px;
@@ -370,8 +370,8 @@ nav {
   margin-bottom: 20px;
 }
 .form__submit {
-  background-color: #f06449;
-  border: 2px solid #f06449;
+  background-color: #53a4fb;
+  border: 2px solid #53a4fb;
   color: white;
   font-weight: bold;
   max-width: 200px;
@@ -385,8 +385,8 @@ nav {
   background-color: transparent;
 }
 .form__submit:active {
-  border-color: #f06449;
-  color: #f06449;
+  border-color: #53a4fb;
+  color: #53a4fb;
 }
 .modal__overlay {
   position: absolute;
@@ -445,6 +445,10 @@ nav {
   font-size: 48px;
   margin-bottom: 60px;
 }
+.project {
+  margin-bottom: 135px;
+}
+
 .project__img {
   width: 100%;
   transition: all 600ms ease;
@@ -456,7 +460,7 @@ nav {
 .project__wrapper {
   position: relative;
   border-radius: 20px;
-  box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.45);
+  box-shadow: 0 20px 80px 0 rgb(0, 0, 0, 0.90);
   overflow: hidden;
 }
 .project__wrapper:hover .project__description {
@@ -465,7 +469,7 @@ nav {
 }
 .project__wrapper:hover .project__img {
   transform: scale(1.07);
-  filter: blur(5px);
+  filter: blur(12px);
 }
 .project__description {
   position: absolute;
