@@ -1,291 +1,516 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sahil Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="assets\favicon.png" type="image/x-icon" />
     <script src="./index.js"></script>
-    <script src="https://kit.fontawesome.com/a9d6f93c97.js" crossorigin="anonymous"></script>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-        
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init("xrYcv5CqntpwvuqKL");
-   })();
-</script>
-
-</head>
-<body>
+    <script
+      src="https://kit.fontawesome.com/a9d6f93c97.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("xrYcv5CqntpwvuqKL");
+      })();
+    </script>
+  </head>
+  <body>
     <section id="landing-page" onmousemove="moveBackground(event)">
-        <nav>
-
+      <nav>
         <figure id="personal-logo">
-            <img class="img__logo" src="./assets/logo.svg" alt="">
+          <img class="img__logo" src="./assets/logo.svg" alt="" />
         </figure>
         <ul class="nav__link--list">
-             <li class="nav__link">
-                <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">About</a>
-             </li>
-             <li class="nav__link" >
-                <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">Projects</a>
-             </li>
-             <li class="nav__link" onclick="toggleModal()">
-                <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">Contact</a>
-             </li>
-             <li class="nav__link click" onclick="toggleContrast()">
-                <a href="#" class="nav__link--anchor"><i class="fas fa-adjust" ></i></a>
-             </li>
+          <li class="nav__link" onclick="toggleModal()">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >About</a
+            >
+          </li>
+          <li class="nav__link">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Projects</a
+            >
+          </li>
+          <li class="nav__link" onclick="toggleModal()">
+            <a
+              href="#"
+              class="nav__link--anchor link__hover-effect link__hover-effect--black"
+              >Contact</a
+            >
+          </li>
+          <li class="nav__link click" onclick="toggleContrast()">
+            <a href="#" class="nav__link--anchor"
+              ><i class="fas fa-adjust"></i
+            ></a>
+          </li>
         </ul>
-        </nav>
-        <header class="header">
-            <div class="header__content">
-                <h1 class="title">
-                    Hey 
-                </h1>
-                <h1 class="title orange">
-                    I'm Sahil.
-                </h1>
-                <p class="header__para">I'm <b class="orange">Frontend Web Developer </b> with a strong passion for experiences.<br>
-                Here's a bit <b class="orange click" onclick="toggleModal()"> about me.</b></p>
-                <div class="social__list">
-                    <a href="https://www.linkedin.com/in/sahil-panhotra-23b46b239/" target="_blank" class="social__link click"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/sahilpanhotra" target="_blank" class="social__link click"><i class="fab fa-github"></i></a>
-                    <a href="https://twitter.com/sahilpanhotra" target="_blank" class="social__link click"><i class="fab fa-twitter"></i></a>
-                </div> 
-            </div>
-        </header>
-        <button class="mail__btn click" onclick="toggleModal()"><i class="fas fa-envelope"></i></button>
-        <a href="#projects" class="scroll">
-            <div class="scroll__icon click">
-                
-            </div>
-        </a>
-        <div class="modal">
-            
-            <div class="modal__half modal__about">
-                <h3 class="modal__title modal__title--about">Here's a bit about me</h3>
-                <h4 class="modal__sub-title modal__sub-title--about">Frontend Software Engineer</h3>
-                    <p class="modal__para">I am a 26 years old <b class="orange">Frontend developer</b> with 1 year of experience in <b class="orange">web3.</b> I have a strong understanding of web3 technologies and I am dedicated to creating user-friendly interfaces that seamlessly integrate with <b class="orange">blockchain platforms.</b> My experience in the field allows me to design and develop high-quality web3 applications that are both visually appealing and functional. 
-                        <br>
-                        I am constantly updating my skills in <b class="orange">React</b>, <b class="orange">NextJS</b>, <b class="orange">JavaScript</b>, <b
-            class="orange">Css</b>, <b class="orange">Tailwindcss</b> And More technologies and looking to take on new challenges in the industry.
-              </p>
-              <div class="modal__languages">
-                <figure class="modal__language">
-                  <img class="modal__language--img"
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
-                    alt="">
-                  <span class="language__name">HTML</span>
-                </figure>
-                <figure class="modal__language">
-                  <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
-                    alt="">
-                  <span class="language__name">CSS</span>
-                </figure>
-                <figure class="modal__language">
-                  <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
-                    alt="">
-                  <span class="language__name">JavaScript</span>
-                </figure>
-                <figure class="modal__language">
-                  <img class="modal__language--img"
-                    src="https://www.rlogical.com/wp-content/uploads/2021/08/Rlogical-Blog-Images-thumbnail.png" alt="">
-                  <span class="language__name">NextJS</span>
-                </figure>
-      
-                <figure class="modal__language">
-                  <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-128/tailwind-css-5285308-4406745.png" alt="">
-                  <span class="language__name">Tailwindcss</span>
-                </figure>
-                <figure class="modal__language">
-                  <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png"
-                    alt="">
-                  <span class="language__name">React</span>
-                </figure>
-                <figure class="modal__language">
-                  <img class="modal__language--img" src="./assets/solidity.png" alt="">
-                  <span class="language__name">Solidity</span>
-                </figure>
-                <figure class="modal__language">
-                  <img class="modal__language--img"
-                    src="https://res.cloudinary.com/divzjiip8/image/upload/v1624392472/logos/ethers_blue.png" alt="">
-                  <span class="language__name">EthersJS</span>
-                </figure>
-                </div>
-            </div> 
-            <div class="modal__half modal__contact">
-                <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
-                <h3 class="modal__title modal__title--contact">Let's Have a Chat</h3>
-                <h3 class="modal__sub-title modal__sub-title--contact">I'm Currently Open to New Opportunities.</h3>
-                <form id="contact__form" onsubmit="contact(event)" >
-                    <div class="form__item">
-                        <label class="form__item--label" >Name</label>
-                        <input class="input" type="text" name="user_name" required></input>
-                    </div>
-                    <div class="form__item">
-                        <label class="form__item--label" >Email</label>
-                        <input class="input" type="email" name="user_email" required></input>
-                    </div>
-                    <div class="form__item">
-                        <label class="form__item--label">Message</label>
-                        <textarea class="input" type="text" name="message" required></textarea>
-                    </div>
-                    <button id="contact__submit" class="form__submit">Send it My Way</button>
-                </form>
-                <div class="modal__overlay modal__overlay--loading"><i class="fas fa-spinner"></i></div>
-                <div class="modal__overlay modal__overlay--success">Thanks for the Message! Looking Forward to Speaking to You Soon.</div>
-            </div>
-           
+      </nav>
+      <header class="header">
+        <div class="header__content">
+          <h1 class="title">Hey</h1>
+          <h1 class="title orange">I'm Sahil.</h1>
+          <p class="header__para">
+            I'm <b class="orange">Freelance Frontend Web Developer </b> with a
+            strong passion for experiences.<br />
+            Here's a bit
+            <b class="orange click" onclick="toggleModal()"> about me.</b>
+          </p>
+          <div class="social__list">
+            <a
+              href="https://www.linkedin.com/in/sahilpanhotra/"
+              target="_blank"
+              class="social__link click"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a
+              href="https://github.com/sahilpanhotra"
+              target="_blank"
+              class="social__link click"
+              ><i class="fab fa-github"></i
+            ></a>
+            <a
+              href="https://twitter.com/sahilpanhotra"
+              target="_blank"
+              class="social__link click"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </div>
         </div>
-        <img src="./assets/semi circle.svg" class="shape shape--0" >
-           <img src="./assets/circle.svg" class="shape shape--1" >
-           <img src="./assets/squiggly.svg" class="shape shape--2" >
-           <img src="./assets/circle.svg" class="shape shape--3" >
-           <img src="./assets/triangle.svg" class="shape shape--4" >
-           <img src="./assets/circle.svg" class="shape shape--5" >
-           <img src="./assets/squiggly.svg" class="shape shape--6" >
-           <img src="./assets/circle.svg" class="shape shape--7" >
-           <img src="./assets/semi circle.svg" class="shape shape--8" >
+      </header>
+      <button class="mail__btn click" onclick="toggleModal()">
+        <i class="fas fa-envelope"></i>
+      </button>
+      <a href="#projects" class="scroll">
+        <div class="scroll__icon click"></div>
+      </a>
+      <div class="modal">
+        <div class="modal__half modal__about">
+          <h3 class="modal__title modal__title--about">
+            Here's a bit about me
+          </h3>
+          <h4 class="modal__sub-title modal__sub-title--about">
+            Freelance Frontend Software Engineer
+          </h4>
+          <p class="modal__para">
+            I am <b class="orange">Freelance Frontend developer</b> with 1 year
+            of experience in <b class="orange">web3.</b> I have a strong
+            understanding of web3 technologies and I am dedicated to creating
+            user-friendly interfaces that seamlessly integrate with
+            <b class="orange">blockchain platforms.</b> My experience in the
+            field allows me to design and develop high-quality web3 applications
+            that are both visually appealing and functional.
+            <br />
+            I am constantly updating my skills in <b class="orange">React</b>,
+            <b class="orange">NextJS</b>, <b class="orange">JavaScript</b>,
+            <b class="orange">Css</b>, <b class="orange">Tailwindcss</b> And
+            More technologies and looking to take on new challenges in the
+            industry.
+          </p>
+          <div class="modal__languages">
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+                alt=""
+              />
+              <span class="language__name">HTML</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
+                alt=""
+              />
+              <span class="language__name">CSS</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
+                alt=""
+              />
+              <span class="language__name">JavaScript</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://www.rlogical.com/wp-content/uploads/2021/08/Rlogical-Blog-Images-thumbnail.png"
+                alt=""
+              />
+              <span class="language__name">NextJS</span>
+            </figure>
+
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://cdn.iconscout.com/icon/free/png-128/tailwind-css-5285308-4406745.png"
+                alt=""
+              />
+              <span class="language__name">Tailwindcss</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png"
+                alt=""
+              />
+              <span class="language__name">React</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="./assets/solidity.png"
+                alt=""
+              />
+              <span class="language__name">Solidity</span>
+            </figure>
+            <figure class="modal__language">
+              <img
+                class="modal__language--img"
+                src="https://res.cloudinary.com/divzjiip8/image/upload/v1624392472/logos/ethers_blue.png"
+                alt=""
+              />
+              <span class="language__name">EthersJS</span>
+            </figure>
+          </div>
+        </div>
+        <div class="modal__half modal__contact">
+          <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+          <h3 class="modal__title modal__title--contact">Let's Have a Chat</h3>
+          <h3 class="modal__sub-title modal__sub-title--contact">
+            I'm Currently Open to New Opportunities.
+          </h3>
+          <form id="contact__form" onsubmit="contact(event)">
+            <div class="form__item">
+              <label class="form__item--label">Name</label>
+              <input class="input" type="text" name="user_name" required />
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Email</label>
+              <input class="input" type="email" name="user_email" required />
+            </div>
+            <div class="form__item">
+              <label class="form__item--label">Message</label>
+              <textarea
+                class="input"
+                type="text"
+                name="message"
+                required
+              ></textarea>
+            </div>
+            <button id="contact__submit" class="form__submit">
+              Send it My Way
+            </button>
+          </form>
+          <div class="modal__overlay modal__overlay--loading">
+            <i class="fas fa-spinner"></i>
+          </div>
+          <div class="modal__overlay modal__overlay--success">
+            Thanks for the Message! Looking Forward to Speaking to You Soon.
+          </div>
+        </div>
+      </div>
+      <img src="./assets/semi circle.svg" class="shape shape--0" />
+      <img src="./assets/circle.svg" class="shape shape--1" />
+      <img src="./assets/squiggly.svg" class="shape shape--2" />
+      <img src="./assets/circle.svg" class="shape shape--3" />
+      <img src="./assets/triangle.svg" class="shape shape--4" />
+      <img src="./assets/circle.svg" class="shape shape--5" />
+      <img src="./assets/squiggly.svg" class="shape shape--6" />
+      <img src="./assets/circle.svg" class="shape shape--7" />
+      <img src="./assets/semi circle.svg" class="shape shape--8" />
     </section>
     <section id="projects">
-        <div class="container">
-            <div class="row">
-                <h1 class="section__title">
-                    Here are Some of <span class="orange" >My Projects </span>
-                </h1>
-                <ul class="project__list">
-                    <li class="project">
-                        <div class="project__wrapper">
-                            <img src="./assets/Cryptoket.png" class="project__img" alt="NFT Marketplace Project">
-                            <div class="project__wrapper--bg">
-                            <div class="project__description">
-                                <h3 class="project__description--title">
-                                    CryptoKet NFT MarketPlace
-                                </h3>
-                                <h4 class="project__description--sub-title">
-                                    Next.js,Tailwindcss,ethers.js,Javascript,Infura
-                                </h4>
-                                <p class="project__description--para">
-                                    Discover the future of digital collecting at Cryptoket NftMarketplace. Our marketplace offers a vast selection of unique digital assets represented by non-fungible tokens (NFTs) on the blockchain. Buy, sell, and explore digital art with the assurance of authenticity and ownership. Join our community of artists, creators and collectors. Start your collection now on Cryptoket NftMarketplace.
-                                </p>
-                                <div class="project__description--links">
-                                    <a href="https://github.com/SahilPanhotra/CryptoKet" class="project__description--link"><i class="fab fa-github"></i></a>
-                                    <a href="https://crypto-ket-blond.vercel.app/" class="project__description--link"><i class="fas fa-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                    </li>
-                    <li class="project">
-                        <div class="project__wrapper">
-                            <img src="./assets/samdex.png" class="project__img" alt="NFT Marketplace Project">
-                            <div class="project__wrapper--bg">
-                            <div class="project__description">
-                                <h3 class="project__description--title">
-                                    Sam Dex-The Decentralised Exchange
-                                </h3>
-                                <h4 class="project__description--sub-title">
-                                    Reactjs,Solidity,ethers.js,Javascript,Redux-toolkit
-                                </h4>
-                                <p class="project__description--para">
-                                    Sam Dex is a decentralized exchange for cryptocurrency, built with React and Redux. It allows users to trade various cryptocurrencies directly with each other, securely and transparently. The platform has a modern interface and advanced trading tools, including real-time price charts and customizable order types. A notification system keeps users informed of important updates. Sam Dex is the perfect platform for traders looking for a decentralized alternative to traditional cryptocurrency exchanges.
-                                </p>
-                                <div class="project__description--links">
-                                    <a href="https://github.com/SahilPanhotra/SamDex" class="project__description--link"><i class="fab fa-github"></i></a>
-                                    <a href="https://sam-dex.vercel.app/" class="project__description--link"><i class="fas fa-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                    </li>
-                    <li class="project">
-                        <div class="project__wrapper">
-                            <img src="./assets/MoviesDB.png" class="project__img" alt="NFT Marketplace Project">
-                            <div class="project__wrapper--bg">
-                            <div class="project__description">
-                                <h3 class="project__description--title">
-                                    MoviesDB Search your Movies
-                                </h3>
-                                <h4 class="project__description--sub-title">
-                                    Reactjs,Javascript,OMDB API
-                                </h4>
-                                <p class="project__description--para">
-                                    MoviesDb Search is the perfect tool for movie enthusiasts. With our platform, you can easily search and discover your favorite films. We use the Open Movie Database (OMDB) API to provide you with accurate, up-to-date information on movies from all over the world. You can look up movies by title. Our platform is user-friendly and easy to navigate, making it simple for you to find the movies you're looking for. Whether you're a casual movie watcher or a serious film buff, MoviesDB has something for you.
-                                </p>
-                                <div class="project__description--links">
-                                    <a href="https://github.com/SahilPanhotra/moviesdb" class="project__description--link"><i class="fab fa-github"></i></a>
-                                    <a href="http://moviesdb-smoky.vercel.app/" class="project__description--link"><i class="fas fa-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                    </li>
-                    <li class="project">
-                        <div class="project__wrapper">
-                            <img src="./assets/Elibrary.png" class="project__img" alt="NFT Marketplace Project">
-                            <div class="project__wrapper--bg">
-                            <div class="project__description">
-                                <h3 class="project__description--title">
-                                    ELibrary Book Store
-                                </h3>
-                                <h4 class="project__description--sub-title">
-                                    Reactjs,Javascript,Css
-                                </h4>
-                                <p class="project__description--para">
-                                    ELibrary is a React-based online book shopping platform. It offers a wide range of books, from classic literature to the latest bestsellers, with a user-friendly interface to easily search, browse and purchase books. All books are available in digital format and can be read online or downloaded. It is responsive, optimized for all devices, and has secure payment gateway integrated, along with a book recommendation system. Perfect for book lovers looking for an easy and convenient way to buy and read books online.
-                                </p>
-                                <div class="project__description--links">
-                                    <a href="https://github.com/SahilPanhotra/Elibrary_react" class="project__description--link"><i class="fab fa-github"></i></a>
-                                    <a href="https://elibrary-react.vercel.app/" class="project__description--link"><i class="fas fa-link"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
+      <div class="container">
+        <div class="row">
+          <h1 class="section__title">
+            Here are Some of <span class="orange">My Projects </span>
+          </h1>
+          <ul class="project__list">
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets/Cryptoket.png"
+                  class="project__img"
+                  alt="NFT Marketplace Project"
+                />
+                <div class="project__wrapper--bg">
+                  <div class="project__description">
+                    <h3 class="project__description--title">
+                      CryptoKet NFT MarketPlace
+                    </h3>
+                    <h4 class="project__description--sub-title">
+                      Next.js,Tailwindcss,ethers.js,Javascript,Infura
+                    </h4>
+                    <p class="project__description--para">
+                      Discover the future of digital collecting at Cryptoket
+                      NftMarketplace. Our marketplace offers a vast selection of
+                      unique digital assets represented by non-fungible tokens
+                      (NFTs) on the blockchain. Buy, sell, and explore digital
+                      art with the assurance of authenticity and ownership. Join
+                      our community of artists, creators and collectors. Start
+                      your collection now on Cryptoket NftMarketplace.
+                    </p>
+                    <div class="project__description--links">
+                      <a
+                        href="https://github.com/SahilPanhotra/CryptoKet"
+                        target="_blank"
+                        class="project__description--link"
+                        ><i class="fab fa-github"></i
+                      ></a>
+                      <a
+                        target="_blank"
+                        href="https://crypto-ket-blond.vercel.app/"
+                        class="project__description--link"
+                        ><i class="fas fa-link"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets/samdex.png"
+                  class="project__img"
+                  alt="NFT Marketplace Project"
+                />
+                <div class="project__wrapper--bg">
+                  <div class="project__description">
+                    <h3 class="project__description--title">
+                      Sam Dex-The Decentralised Exchange
+                    </h3>
+                    <h4 class="project__description--sub-title">
+                      Reactjs,Solidity,ethers.js,Javascript,Redux-toolkit
+                    </h4>
+                    <p class="project__description--para">
+                      Sam Dex is a decentralized exchange for cryptocurrency,
+                      built with React and Redux. It allows users to trade
+                      various cryptocurrencies directly with each other,
+                      securely and transparently. The platform has a modern
+                      interface and advanced trading tools, including real-time
+                      price charts and customizable order types. A notification
+                      system keeps users informed of important updates. Sam Dex
+                      is the perfect platform for traders looking for a
+                      decentralized alternative to traditional cryptocurrency
+                      exchanges.
+                    </p>
+                    <div class="project__description--links">
+                      <a
+                        href="https://github.com/SahilPanhotra/SamDex"
+                        class="project__description--link"
+                        ><i class="fab fa-github"></i
+                      ></a>
+                      <a
+                        href="https://sam-dex.vercel.app/"
+                        class="project__description--link"
+                        ><i class="fas fa-link"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets/ultraverse.png"
+                  class="project__img"
+                  alt="NFT Marketplace Project"
+                />
+                <div class="project__wrapper--bg">
+                  <div class="project__description">
+                    <h3 class="project__description--title">
+                      Ultraverse NFT MarketPlace
+                    </h3>
+                    <h4 class="project__description--sub-title">
+                      Reactjs,Javascript,Css,Animate on Scroll,React Slick
+                      Carousel
+                    </h4>
+                    <p class="project__description--para">
+                      Ultraverse is a React-based NFT showcase platform that
+                      offers creators a visually stunning and interactive tool
+                      to display their artwork. Features like Animate on Scroll,
+                      skeleton loading state, and React Slick Carousel provide a
+                      seamless user experience. Ultraverse brings NFT showcases
+                      to life with engaging visuals and immersive experiences
+                      for artists and collectors alike.
+                    </p>
+                    <div class="project__description--links">
+                      <a
+                        target="_blank"
+                        href="https://github.com/SahilPanhotra/Ultraverse"
+                        class="project__description--link"
+                        ><i class="fab fa-github"></i
+                      ></a>
+                      <a
+                        target="_blank"
+                        href="https://ultraverse-smoky.vercel.app/"
+                        class="project__description--link"
+                        ><i class="fas fa-link"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets/Elibrary.png"
+                  class="project__img"
+                  alt="NFT Marketplace Project"
+                />
+                <div class="project__wrapper--bg">
+                  <div class="project__description">
+                    <h3 class="project__description--title">
+                      ELibrary Book Store
+                    </h3>
+                    <h4 class="project__description--sub-title">
+                      Reactjs,Javascript,Css
+                    </h4>
+                    <p class="project__description--para">
+                      ELibrary is a React-based online book shopping platform.
+                      It offers a wide range of books, from classic literature
+                      to the latest bestsellers, with a user-friendly interface
+                      to easily search, browse and purchase books. All books are
+                      available in digital format and can be read online or
+                      downloaded. It is responsive, optimized for all devices,
+                      and has secure payment gateway integrated, along with a
+                      book recommendation system. Perfect for book lovers
+                      looking for an easy and convenient way to buy and read
+                      books online.
+                    </p>
+                    <div class="project__description--links">
+                      <a
+                        target="_blank"
+                        href="https://github.com/SahilPanhotra/Elibrary_react"
+                        class="project__description--link"
+                        ><i class="fab fa-github"></i
+                      ></a>
+                      <a
+                        target="_blank"
+                        href="https://elibrary-react.vercel.app/"
+                        class="project__description--link"
+                        ><i class="fas fa-link"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="project">
+              <div class="project__wrapper">
+                <img
+                  src="./assets/MoviesDB.png"
+                  class="project__img"
+                  alt="NFT Marketplace Project"
+                />
+                <div class="project__wrapper--bg">
+                  <div class="project__description">
+                    <h3 class="project__description--title">
+                      MoviesDB Search your Movies
+                    </h3>
+                    <h4 class="project__description--sub-title">
+                      Reactjs,Javascript,OMDB API
+                    </h4>
+                    <p class="project__description--para">
+                      MoviesDb Search is the perfect tool for movie enthusiasts.
+                      With our platform, you can easily search and discover your
+                      favorite films. We use the Open Movie Database (OMDB) API
+                      to provide you with accurate, up-to-date information on
+                      movies from all over the world. You can look up movies by
+                      title. Our platform is user-friendly and easy to navigate,
+                      making it simple for you to find the movies you're looking
+                      for. Whether you're a casual movie watcher or a serious
+                      film buff, MoviesDB has something for you.
+                    </p>
+                    <div class="project__description--links">
+                      <a
+                        target="_blank"
+                        href="https://github.com/SahilPanhotra/moviesdb"
+                        class="project__description--link"
+                        ><i class="fab fa-github"></i
+                      ></a>
+                      <a
+                        target="_blank"
+                        href="http://moviesdb-smoky.vercel.app/"
+                        class="project__description--link"
+                        ><i class="fas fa-link"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
+      </div>
     </section>
     <footer>
-        <div class="container">
-            <div class="row footer__row">
-                <a href="#" class="footer__anchor">
+      <div class="container">
+        <div class="row footer__row">
+          <a href="#" class="footer__anchor">
             <figure>
-                <img class="footer__logo--img" src="./assets/logo.svg" alt="">
+              <img class="footer__logo--img" src="./assets/logo.svg" alt="" />
             </figure>
             <span class="footer__logo--popper">
-                Top
-                <i class="fas fa-arrow-up"></i>
-              </span>
+              Top
+              <i class="fas fa-arrow-up"></i>
+            </span>
+          </a>
+          <div class="footer__social--list">
+            <a
+              target="_blank"
+              href="https://github.com/sahilpanhotra"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              Github
             </a>
-            <div class="footer__social--list">
-                <a href="https://github.com/sahilpanhotra" class="footer__social--link link__hover-effect link__hover-effect--white">
-                    Github
-                </a>
-                <a href="https://twitter.com/sahilpanhotra" class="footer__social--link link__hover-effect link__hover-effect--white">
-                    Twitter
-                </a>
-                <a href="https://www.linkedin.com/in/sahil-panhotra-23b46b239/" class="footer__social--link link__hover-effect link__hover-effect--white">
-                    linkedin
-                </a>
-                <!-- <a href="" class="footer__social--link link__hover-effect link__hover-effect--white">
+            <a
+              target="_blank"
+              href="https://twitter.com/sahilpanhotra"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              Twitter
+            </a>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/sahilpanhotra/"
+              class="footer__social--link link__hover-effect link__hover-effect--white"
+            >
+              linkedin
+            </a>
+            <!-- <a href="" class="footer__social--link link__hover-effect link__hover-effect--white">
                     Resume
                 </a> -->
-                <li onclick="toggleModal()">
-                <a href="#" class="footer__social--link link__hover-effect link__hover-effect--white" >
-                    Contact
-                </a>
+            <li onclick="toggleModal()">
+              <a
+                href="#"
+                class="footer__social--link link__hover-effect link__hover-effect--white"
+              >
+                Contact
+              </a>
             </li>
-            </div>
-            <div class="footer__copyright">Copyright &copy; 2023 Sahil Panhotra</div>
+          </div>
+          <div class="footer__copyright">
+            Copyright &copy; 2023 Sahil Panhotra
+          </div>
         </div>
-        </div>
-
-        
+      </div>
     </footer>
-</body>
+  </body>
 </html>
